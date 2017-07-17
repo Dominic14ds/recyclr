@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="rangeslider.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
 					<span class="icon-bar"></span>                       
 				</button>
 				<img src="img/icon.png" class="navbar-image">
-				<a class="navbar-brand align-middle header-text" href="#">Recyclr</a>
+				<a class="navbar-brand align-middle header-text" href="home.html">Recyclr</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
@@ -37,28 +38,153 @@
 							<button class="btn btn-default" type="submit">
 								<i class="glyphicon glyphicon-search"></i>
 							</button>
-							<button class="btn btn-default" type="button" data-toggle="collapse" data-target="#demo">
-								<i class="glyphicon glyphicon glyphicon-plus"></i>
-							</button>
 						</div>
 					</div>
-					<button class="btn"  data-target="#logModal" data-toggle="modal"><i class="glyphicon glyphicon-log-in"></i> Login</button>
 				</form>
 			</div>
 		</div>
 	</nav>
 	<div class="container">
-		<div class="col-md-3">
-			
+	<div class="col-md-1">
 		</div>
-		<div class="col-md-1">
-			
-
+		<div class="col-md-2">
+			<div class="panel panel-default panel-selection">
+				<div class="panel-heading">Price</div>
+				<div class="panel-body">
+					<div class="radio">
+						<label><input type="radio" name="optradio">< 5,000</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="optradio">5,000-9,999</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="optradio">10,000-15,000</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="optradio">>15,000</label>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default panel-selection">
+				<div class="panel-heading">Make</div>
+				<div class="panel-body">
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Apple</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Blackberry</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">HTC</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Lenovo</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">LG</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Motorola</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Nokia</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Samsung</label>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default panel-selection">
+				<div class="panel-heading">Operating System</div>
+				<div class="panel-body">
+					<div class="checkbox">
+						<label><input type="checkbox" value="">iOS</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Android</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Symbian</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Windows</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Blackberry</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox" value="">Others</label>
+					</div>
+				</div>	
+				<div class="panel panel-default panel-selection">
+					<div class="panel-heading">Age</div>
+					<div class="panel-body">
+						<div class="radio">
+							<label><input type="radio" name="optradio">< 1 year</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">1 year-2 year</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">2 year-3 year</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="optradio">>3 year</label>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="col-md-8">
-
-		</div>		
+			<div class="row row-item">
+				<div class="col-md-8">
+					<h3>iPhone 6S</h3>
+					<p><span class="glyphicon text-primary glyphicon-map-marker"></span> Mumbai, Maharashtra</p>
+					<p class="text-primary text-left">Rs 15,000</p>
+					<p class="text-user"><span class="glyphicon text-primary glyphicon-user"></span> Heet Palod,<i>verfied user</i></p>
+					
+				</div>
+				<div class="col-md-4">
+					<img src="img/iphone-6s.jpg" class="img-responsive img-right">	
+				</div>
+			</div>
+			<div class="row row-item">
+				<div class="col-md-8">
+					<h3>Samsung S7</h3>
+					<p><span class="glyphicon text-primary glyphicon-map-marker"></span> Pune, Maharashtra</p>
+					<p class="text-primary text-left">Rs 12,000</p>
+					<p class="text-user"><span class="glyphicon text-primary glyphicon-user"></span> Omkar Jadhav,<i>verfied user</i></p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/samsungs-s7.jpg" class="img-responsive img-right">	
+				</div>
+			</div>
+			<div class="row row-item">
+				<div class="col-md-8">
+					<h3>HTC Fuel</h3>
+					<p><span class="glyphicon text-primary glyphicon-map-marker"></span> Mumbai, Maharashtra</p>
+					<p class="text-primary text-left">Rs 7,500</p>
+					<p class="text-user"><span class="glyphicon text-primary glyphicon-user"></span> Heet Palod,<i>verfied user</i></p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/HCL-Fuel.jpg" class="img-responsive img-right">	
+				</div>
+			</div>
+			<div class="row row-item">
+				<div class="col-md-8">
+					<h3>Samsung Galaxy J7</h3>
+					<p><span class="glyphicon text-primary glyphicon-map-marker"></span> Pune, Maharashtra</p>
+					<p class="text-primary text-left">Rs 10,000</p>
+					<p class="text-user"><span class="glyphicon text-primary glyphicon-user"></span> Pooja Newase,<i>verfied user</i></p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/Samsung-GalaxyJ7.jpg" class="img-responsive img-right">	
+				</div>
+			</div>
+		</div>
 	</div>
+
+</div>
 </div>
 </body>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recyclr</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		var addclass = 'red';
+		var $cols = $('.column').click(function(e) {
+			$cols.removeClass(addclass);
+			$(this).addClass(addclass);
+		});
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-cust">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                       
+				</button>
+				<img src="img/icon.png" class="navbar-image">
+				<a class="navbar-brand align-middle header-text" href="home.html">Recyclr</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li ><a href="#" class="header-text">Home</a></li>
+					<li class="dropdown"><a class="dropdown-toggle header-text" data-toggle="dropdown" href="#">Movies<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Top 10 Movies</a></li>
+							<li><a href="#">Upcoming Movies</a></li>
+							<li><a href="#">MovieBuzz Classics</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="header-text">Facts</a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<h3>Post an Ad</h3>
+		<p class="text-primary">Select a Category</p>
+		<div class="row" id="root">
+			<div class="column col-md-2 category">
+				<img src="img/phone1.png" class="img-responsive img-cat">
+				<p class="text-center">Mobiles</p>
+			</div>
+			<div class="column col-md-2 category">
+				<img src="img/car.png" class="img-responsive img-cat">
+				<p class="text-center">Cars & Bikes</p>
+			</div>
+			<div class="column col-md-2 category">
+				<img src="img/computer.png" class="img-responsive img-cat">
+				<p class="text-center">Laptop & PC</p>
+			</div>
+			<div class="column col-md-2 category">
+				<img src="img/furniture.png" class="img-responsive img-cat">
+				<p class="text-center">Furnitures</p>
+			</div>
+			<div class="column col-md-2 category">
+				<img src="img/appliance.png" class="img-responsive img-cat">
+				<p class="text-center">Appliances</p>
+			</div>
+			<div class="column col-md-2 category">
+				<img src="img/home.png" class="img-responsive img-cat">
+				<p class="text-center">Real estate</p>
+			</div>
+		</div>
+		<div class="row">
+			
+		</div>
+
+		<div class="col-md-1">
+			
+		</div>
+		<div class="col-md-5">
+			
+		</div>
+		<div class="col-md-1">
+			
+
+		</div>
+		<div class="col-md-8">
+
+		</div>		
+	</div>
+</div>
+</body>
+</html>
